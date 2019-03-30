@@ -18,9 +18,10 @@ Structure of Project:
 
 * HTML files are in folder "views" and end in .ejs (which stands for embedded java-script, can write as if html)
   * don't worry about the first and last lines in both .ejs files, just put your html in between them
+  * You'll probably just be editing home.ejs and secondPage.ejs (we can rename these later lmao)
 * CSS file (main.css) is in folder public->stylesheets
   * Can use normal CSS
-* I already included bootstrap which will make the front-end of the project easier - but styling should prolly be one of the last thigns we do
+* I already included bootstrap which will make the front-end of the project easier - but styling should prolly be one of the last things we do
   * docs: https://getbootstrap.com/docs/4.3/components/alerts/
 * app.js is kind of backbone of the application -- has all the routes and stuff. You shouldn't have to worry about that yet?
   * instructions of how to run in there tho
