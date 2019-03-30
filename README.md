@@ -2,6 +2,8 @@
 
 FOR TEAMMATES: 
 
+NOTE: THIS IS USING NODE.JS AND EXPRESS (bootstrap too!!!)
+
 
 Setting up the project on your computer:
 
