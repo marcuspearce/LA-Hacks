@@ -10,6 +10,29 @@ app.set("view engine", "ejs"); //expect ejs in rendering
 app.use(express.static(__dirname + "/public")); //to access public folder (CSS STYLESHEET)
 
 
+// new firebase stuff
+
+const admin = require('firebase-admin');
+
+var serviceAccount = require('./firebaseKey.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
+var db = admin.firestore();
+
+
+// setting smt
+
+var docRef = db.collection('Restrictions').doc('Eric');
+
+var setEric = docRef.set({
+  cheese: false
+});
+
+
+
 
 // ********** ROUTES **********
 
@@ -17,6 +40,12 @@ app.use(express.static(__dirname + "/public")); //to access public folder (CSS S
 // Home ROUTE
 app.get("/",function(req,res){
     res.render("home");
+});
+
+
+// Second Page ROUTE
+app.get("/results",function(req,res){
+    res.render("results");
 });
 
 

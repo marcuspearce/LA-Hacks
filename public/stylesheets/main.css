@@ -1,8 +1,8 @@
-/* just to prove this works */
-h1
-{
-	color:purple;
-}
-
-
 /* CUSTOM CSS GOES HERE */
+
+/*make so diff sized images ok*/
+.menu-card
+{
+	display:flex; 
+	flex-wrap: wrap;
+}
