@@ -14,7 +14,7 @@ app.use(express.static(__dirname + "/public")); //to access public folder (CSS S
 
 const admin = require('firebase-admin');
 
-var serviceAccount = require('./firebaseKey.json');
+var serviceAccount = require('../firebaseKeyLAHacks.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
